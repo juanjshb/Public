@@ -34,19 +34,15 @@ AND pe.custidnumber IN (SELECT rnc FROM vids_businesses WHERE status = 1) --- RN
 AND UPPER(t.ORIGINATOR) NOT LIKE '%INCOMING%';
 """
 
-# Generate current date in YYYYMMDD format
-current_date = datetime.now().strftime("%Y%m%d")
-
-# Prompt user for custom file name
-custom_file_name = input("Enter custom file name (without extension): ")
-
+cdate = datetime.now().strftime("%Y%m%d")
+custom_file_name = "B2B_123456_TRANSACTIONS"
 result = runqry(query)
 
 if result:
-    file_name = f"{custom_file_name}_{current_date}.txt"
+    file_name = f"{custom_file_name}_{cdate}.txt"
     with open(file_name, "w") as f:
         for row in result:
-            f.write(','.join(map(str, row)) + '\n')
+            f.write('|'.join(map(str, row)) + '\n')
     print(f"Query results exported to {file_name}")
 else:
     print("Error executing query.")
