@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather Report</string>
+    <string name="okey">OKEY</string>
+    <string name="permission_required">Sorry, but some permissions are required to use the app.</string>
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="degree">°C</string>
+    <string name="state_country">State, Country</string>
+    <string name="weather_status">Cloudy</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="overall_forecast">Overall Forecast</string>
+    <string name="see_more">See more</string>
+    <string name="feels_like">Feels like: </string>
+    <string name="min_temp">Minimun: </string>
+    <string name="max_temp">Maximum: </string>
+    <string name="weather_overall">Weather Overall\n=</string>
+</resources>
