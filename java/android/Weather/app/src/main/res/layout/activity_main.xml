@@ -7,6 +7,7 @@
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".activities.MainActivity">
 
     <ImageView
@@ -23,6 +24,7 @@
         android:layout_height="match_parent">
 
             <TextView
+                android:textColor="@color/text"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textAlignment="center"
@@ -38,12 +40,14 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textColor="@color/text"
                 android:id="@+id/tvTemperature"
                 android:text="30"
                 android:textSize="64sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:textColor="@color/text"
                 android:id="@+id/tvTemperatureDegree"
                 android:text="@string/degree"
                 android:textSize="64sp"
@@ -53,6 +57,7 @@
         </LinearLayout>
 
         <TextView
+            android:textColor="@color/text"
             android:id="@+id/tvStateCountry"
             android:textAlignment="center"
             android:text="@string/state_country"
@@ -78,6 +83,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textColor="@color/text"
                 android:id="@+id/tvSunrise"
                 android:text="@string/sunrise"
                 android:textSize="18sp"
@@ -91,6 +97,7 @@
                 android:layout_height="match_parent"/>
 
             <TextView
+                android:textColor="@color/text"
                 android:id="@+id/tvSunset"
                 android:text="@string/sunset"
                 android:textSize="18sp"
@@ -106,6 +113,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textColor="@color/text"
                 android:layout_weight="1"
                 android:layout_gravity="start"
                 android:text="@string/overall_forecast"

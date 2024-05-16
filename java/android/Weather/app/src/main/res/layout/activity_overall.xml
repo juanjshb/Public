@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:background="@color/background"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,11 +10,160 @@
     tools:context=".activities.OverallActivity">
 
     <ImageView
+        android:id="@+id/imgoval"
         android:scaleType="fitXY"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="-50dp"
         android:layout_centerVertical="true"
         android:src="@drawable/ova_top_shape"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_below="@id/imgoval"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:text="@string/today_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum=".5"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:textColor="@color/text"
+                    android:text="@string/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvWind"
+                    android:textColor="@color/primary"
+                    android:text="10"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="textEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum=".5"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:textColor="@color/text"
+                    android:text="@string/direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/tvWindDirection"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum=".5"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:textColor="@color/text"
+                    android:text="@string/pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/tvPressure"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum=".5"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:textColor="@color/text"
+                    android:text="@string/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_weight=".25"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/tvHumidity"
+                    android:textColor="@color/primary"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:weightSum="1"
@@ -27,10 +177,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"/>
 
-        <View
-            android:layout_weight=".5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
+
 
     </LinearLayout>
 
@@ -40,11 +187,13 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imgOverGoBack"
             android:layout_marginTop="5dp"
             android:scaleType="fitXY"
             android:src="@drawable/ic_back"
-            android:layout_width="48dp"
-            android:layout_height="48dp"/>
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
 
         <LinearLayout
             android:layout_marginTop="15dp"
@@ -53,6 +202,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:textColor="@color/dark_text"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textAlignment="center"
@@ -61,27 +211,86 @@
                 android:layout_height="wrap_content"/>
 
             <LinearLayout
+                android:weightSum="1"
                 android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvTemperature"
-                    android:text="30"
-                    android:textSize="64sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvTemperatureDegree"
-                    android:text="@string/degree"
-                    android:textSize="64sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:text="Country, State"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverState"
+                        android:textSize="24sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Month DD, YYYY"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Day"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="32 ~C"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverTemp"
+                        android:textSize="48sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Weather Status"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverTempStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:text="@string/sunrise"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverSunrise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="@string/sunset"
+                        android:textColor="@color/dark_text"
+                        android:id="@+id/tvOverSunset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_weight=".5"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_overall_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="400dp"/>
 
             </LinearLayout>
+
         </LinearLayout>
 
     </RelativeLayout>

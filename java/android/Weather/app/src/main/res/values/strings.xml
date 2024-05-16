@@ -13,5 +13,11 @@
     <string name="feels_like">Feels like: </string>
     <string name="min_temp">Minimun: </string>
     <string name="max_temp">Maximum: </string>
-    <string name="weather_overall">Weather Overall\n=</string>
+    <string name="weather_overall">Weather Overall</string>
+    <string name="today_details">Today\'s Detail</string>
+    <string name="wind">"Wind"</string>
+    <string name="direction">Direction</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure_unit">hpa</string>
 </resources>

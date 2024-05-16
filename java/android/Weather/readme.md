@@ -9,6 +9,12 @@ This is a simple weather app for Android that provides current weather informati
 - Parses JSON responses from the OpenWeather API using Gson library.
 - Displays weather information such as temperature, humidity, and weather condition.
 
+## Screenshots
+![Pic1](screenshots/sc1.jpg)
+![Pic2](screenshots/sc2.jpg)
+![Pic3](screenshots/sc3.jpg)
+![Pic4](screenshots/sc4.jpg)
+
 ## Requirements
 - Android Studio
 - Android SDK

@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvTemperature, tvTemperatureDegree, tvStateCountry, tvWeatherStatus, tvSunrise, tvSunset,
             tvTempFeels, tvTempMin, tvTempMax, tvSeeOverAll;
 
+    Location lastLocation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Update UI with the current location
         if (location != null) {
 
-
+            lastLocation = location;
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -205,7 +207,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v.getId() == R.id.tvSeeOverAll)
         {
-            startActivity(new Intent(MainActivity.this,OverallActivity.class));
+            if(lastLocation != null)
+            {
+                Intent a = new Intent(MainActivity.this,OverallActivity.class);
+                a.putExtra("lat", Double.toString(lastLocation.getLatitude()));
+                a.putExtra("lng", Double.toString(lastLocation.getLongitude()));
+                startActivity(a);
+            }
         }
     }
 }
