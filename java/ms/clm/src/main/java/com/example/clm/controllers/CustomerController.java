@@ -1,22 +1,18 @@
 package com.example.clm.controllers;
 
-import org.apache.commons.logging.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.clm.models.TokenModel;
 import com.example.clm.services.CLMService;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
 @RequestMapping("/customer")
@@ -27,18 +23,18 @@ public class CustomerController {
 
     @Autowired
     private CLMService clmService; // Assuming CLMService is a Spring-managed component
-    
-    @Autowired
-    private TokenController tokenController; // Assuming CLMService is a Spring-managed component
 
-    @GetMapping
-    public ResponseEntity<String> getCustomer() {
+    @Autowired
+    private TokenController tokenController; // Assuming TokenController is a Spring-managed component
+
+    @GetMapping("/{customerId}")
+    public ResponseEntity<String> getCustomer(@PathVariable("customerId") String customerId) {
         try {
             // Get access token
             var at =  tokenController.parseToken(tokenController.getToken());
 
             // Construct URL for customer data
-            String url = clmService.baseURL + "/profile/customers/51";
+            String url = clmService.baseURL + "/profile/customers/"+customerId;
 
             // Set up headers with access token
             HttpHeaders headers = new HttpHeaders();
