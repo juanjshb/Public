@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Custom border color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+    .form-control:focus {
+        border-color: #80bdff; /* Blue border on focus */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+    }
+
+.btn-primary-login {
+    width: 100%; /* Full-width button */
+    border-radius: 5px; /* Rounded button */
+    background-color: #0d6efd;
+    color: white;
+}
+
+    .btn-primary-login:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        border-color: #004085; /* Darker border on hover */
+        color: white;
+    }

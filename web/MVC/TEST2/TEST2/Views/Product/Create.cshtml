@@ -1,0 +1,43 @@
+﻿@model TEST2.Models.Product
+@{
+    ViewData["Title"] = "Add New Product";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Category" class="control-label"></label>
+        <input asp-for="Category" class="form-control" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity" class="control-label"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DepartmentID" class="control-label"></label>
+        <select asp-for="DepartmentID" class="form-control" asp-items="@(new SelectList(ViewBag.Departments, "DepartmentID", "DepartmentName"))"></select>
+        <span asp-validation-for="DepartmentID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ProductionStatus" class="control-label"></label>
+        <select asp-for="ProductionStatus" class="form-control">
+            <option value="">Select Status</option>
+            @foreach (var status in Enum.GetValues(typeof(ProductionStatus)))
+            {
+                <option value="@status">@status</option>
+            }
+        </select>
+        <span asp-validation-for="ProductionStatus" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Add Product" class="btn btn-primary" />
+    </div>
+</form>

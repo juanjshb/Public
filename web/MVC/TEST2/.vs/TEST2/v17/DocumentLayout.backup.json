@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\TEST2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\utils\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\utils\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|c:\\users\\user\\source\\repos\\test2\\test2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FF9281-2E2D-4989-9E33-6B980BEE43A5}|TEST2\\TEST2.csproj|solutionrelative:test2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TEST2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TEST2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T20:52:51.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Utils\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "TEST2\\Utils\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Utils\\PasswordHelper.cs",
+              "RelativeToolTip": "TEST2\\Utils\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T20:48:53.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TEST2\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TEST2\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T20:45:50.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Program.cs",
+              "RelativeDocumentMoniker": "TEST2\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Program.cs",
+              "RelativeToolTip": "TEST2\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T20:20:24.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Views\\Department\\Index.cshtml",
+              "RelativeDocumentMoniker": "TEST2\\Views\\Department\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Views\\Department\\Index.cshtml",
+              "RelativeToolTip": "TEST2\\Views\\Department\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T14:41:50.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "TEST2\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "TEST2\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:27:39.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "TEST2\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Models\\Department.cs",
+              "RelativeToolTip": "TEST2\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:30:24.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TEST2\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TEST2\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-25T16:05:12.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TEST2\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Models\\Product.cs",
+              "RelativeToolTip": "TEST2\\Models\\Product.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:15:29.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TEST2\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\TEST2\\TEST2\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "TEST2\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T14:33:02.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

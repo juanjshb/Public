@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TEST2.Models.Department>
+@{
+    ViewData["Title"] = "Manage Departments";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Add New Department</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Department Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var department in Model)
+            {
+                <tr>
+                    <td>@department.DepartmentName</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = department.DepartmentID })" class="btn btn-secondary">Edit</a>
+                        <a href="@Url.Action("Delete", new { id = department.DepartmentID })" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this department?');">Delete</a>
+                    </td>
+                </tr>
+            }
+            }
+    </tbody>
+</table>
