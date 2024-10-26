@@ -1,0 +1,25 @@
+﻿@model ProductManager.Models.Product
+
+<h2>Add New Product</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity" class="control-label"></label>
+        <input asp-for="Quantity" class="form-control" type="number" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DepartmentID" class="control-label"></label>
+        <select asp-for="DepartmentID" asp-items="ViewBag.DepartmentList" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ProductionStatus" class="control-label"></label>
+        <select asp-for="ProductionStatus" asp-items="Html.GetEnumSelectList<ProductManager.Models.ProductionStatus>()" class="form-control"></select>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

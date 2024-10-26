@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\ProductManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\utils\\passwordencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\utils\\passwordencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\models\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\models\\loginview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|c:\\users\\user\\source\\repos\\productmanager\\productmanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{54174BAA-1412-45F9-8299-BC1AED09FB14}|ProductManager\\ProductManager.csproj|solutionrelative:productmanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\User.cs",
+              "RelativeToolTip": "ProductManager\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T14:09:47.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Program.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Program.cs",
+              "RelativeToolTip": "ProductManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T14:02:49.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\Product.cs",
+              "RelativeToolTip": "ProductManager\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T13:54:54.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "ProductManager\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "ProductManager\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T13:50:28.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductManager\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T13:40:26.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ProductManager\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ProductManager\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T22:36:11.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordEncrypter.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Utils\\PasswordEncrypter.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Utils\\PasswordEncrypter.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Utils\\PasswordEncrypter.cs",
+              "RelativeToolTip": "ProductManager\\Utils\\PasswordEncrypter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:29:00.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ProductManager\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwC0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:11:37.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProductManager\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ProductManager\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T21:30:54.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginView.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\LoginView.cs",
+              "RelativeDocumentMoniker": "ProductManager\\Models\\LoginView.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\Models\\LoginView.cs",
+              "RelativeToolTip": "ProductManager\\Models\\LoginView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:42:08.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ProductManager\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ProductManager\\ProductManager\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ProductManager\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-25T22:46:22.937Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
