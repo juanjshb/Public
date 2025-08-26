@@ -1,4 +1,4 @@
-# B2B Transactions Export Script
+#  Integrate PRIME4 to VISA Concur
 [![IPG|Juan Herrera](https://raysonline.in/image/python-Rays.png)](https://github.com/juanjshb/)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/juanjshb/)
