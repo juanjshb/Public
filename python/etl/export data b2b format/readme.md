@@ -37,7 +37,7 @@ Install with:
 ```bash
 pip install apache-airflow-providers-sftp
 pip install cx_Oracle
-
+```
 ---
 
 ## 🔑 Configuration
