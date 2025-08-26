@@ -1,74 +1,104 @@
-#  Integrate PRIME4 to VISA Concur
-[![IPG|Juan Herrera](https://raysonline.in/image/python-Rays.png)](https://github.com/juanjshb/)
+# PRIME4 → VISA Concur Integration  
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/juanjshb/)
+This project contains an **Apache Airflow DAG** that automates the process of extracting transaction data from PRIME4, formatting it, encrypting it using PGP, and securely transferring it to VISA Concur via SFTP.  
 
-This Python script is an example to integrate PRIME4 to VISA Concur. By retrieving a business transaction data from the database and exports it into a text file and exports it in a format easy to process for another business.
+The pipeline ensures compliance with VISA Concur requirements and provides a reproducible, auditable process for B2B transaction exchange.  
 
-## Usage
+---
 
-### First Way: Using Oracle:
-This way you have the credentials for the database directly writen in your code. Notice there is a folder:
-- oracle-based ( contains all files for running this process in Oracle)
+## 📋 Features  
 
-### Second Way: Using RedShift:
-This way is for a more secure infraestucture where ypur business have a Credential Manager/API Manager which delivers you the credentials you are going to use. Notice there a file: :
-- redshift-based ( contains all files for running this process in RedShift)
+- **SQL Extraction**: Executes a SQL query on PRIME4 to fetch allowed credit card transactions.  
+- **Data Export**: Writes the result set into a text file with a pipe (`|`) delimiter.  
+- **File Naming Convention**: Files follow the format:  
+B2B_123456_TRANSACTIONS_YYYYMMDD.txt
+- **PGP Encryption**: Encrypts the exported file with a public key provided by VISA Concur.  
+- **Secure File Transfer**: Uploads the encrypted file to VISA Concur’s SFTP endpoint.  
+- **Error Handling**: Fails safely if query results are empty or if encryption/upload steps fail.  
+- **Modular Tasks**: Airflow DAG splits the workflow into three tasks:  
+1. Export transactions  
+2. Encrypt file with PGP  
+3. Transfer file via SFTP  
 
-1. **Query Execution:**
-   - The script executes a SQL query to retrieve B2B transaction data from the database.
-   - The SQL query is defined as a multi-line string in the `query` variable within the script.
-   - Modify the query according to your specific requirements.
+---
 
-2. **Exporting Results:**
-   - The script exports the query results into a pipe-delimited text file.
-   - The output file name is dynamically generated based on the current date and a custom file name.
-   - You can specify the custom file name by modifying the `custom_file_name` variable within the script.
+## ⚙️ Requirements  
 
-3. **Dependencies:**
-   - The script relies on the `query.py` module, which contains the `runqry` function for executing SQL queries.
-   - Make sure to have the `query.py` module present in the same directory as this script.
+### System  
+- Python 3.9+  
+- Apache Airflow 2.6+  
+- GnuPG (`gpg`) installed in the Airflow environment  
 
-4. **Execution:**
-   - Run the script using Python 3.
-   - Upon execution, the script will execute the SQL query and export the results into a text file in the same directory.
+### Airflow Dependencies  
+The DAG uses the following Airflow providers:  
+- `apache-airflow-providers-sftp`  
 
-## Example Output File Name:
-   - B2B_123456_TRANSACTIONS_20220509.txt
-
-Ensure to have the necessary dependencies installed (`query.py`), and modify the script according to your environment and requirements before execution.
-
-
-## Installation
-
-Data Migration requires [Python](https://python.org/) v3.12.3+ to run.
-
-Install these dependencies to run the script:
-
-```sh
+Install with:  
+```bash
+pip install apache-airflow-providers-sftp
 pip install cx_Oracle
-pip install redshift_connector
-```
 
-## Development
+---
 
-Want to contribute? Great!.
+## 🔑 Configuration
 
-First:
+- This DAG relies on **Airflow Variables and Connections** for configuration.
 
-```sh
-Put a Star to this github repo: https://github.com/juanjshb/Public/
-```
+### Airflow Variables  
+| Variable Name             | Description                                                                | Example Value                         |
+| ------------------------- | -------------------------------------------------------------------------- | ------------------------------------- |
+| `B2B_OUTPUT_DIR`          | Local directory where intermediate/export files will be written            | `/opt/airflow/output`                 |
+| `B2B_CUSTOM_FILE_PREFIX`  | Prefix used in generated filenames                                         | `B2B_123456_TRANSACTIONS`             |
+| `B2B_PGP_PUBLIC_KEY_PATH` | Path to the VISA Concur-provided PGP public key                            | `/opt/airflow/keys/concur_pubkey.asc` |
+| `B2B_PGP_RECIPIENT`       | Key identifier (email, fingerprint, or key ID) for the PGP encryption      | `concur-key@example.com`              |
+| `B2B_SFTP_CONN_ID`        | Airflow Connection ID for the SFTP target                                  | `sftp_b2b`                            |
+| `B2B_SFTP_REMOTE_DIR`     | Remote directory on SFTP server where encrypted files should be placed     | `/incoming/b2b`                       |
+| `B2B_DELETE_PLAINTEXT`    | Whether to delete the unencrypted file after PGP encryption (`true/false`) | `true`                                |
 
-Second:
+### Airflow Connection  
+- Create a connection in Airflow UI (Admin > Connections):
+1. Conn Id: sftp_b2b (or match your B2B_SFTP_CONN_ID variable)
+2. Conn Type: SFTP
+3. Login: Username provided by VISA Concur
+4. Password / Key file: Authentication details (password or private key)
 
-```sh
-Clone or Download this project
-```
+### DAG Structure 
+export_transactions_dag
+│
+├── export_transactions  # Run SQL query & write TXT file
+│
+├── pgp_encrypt_file     # Encrypt TXT file using GPG public key
+│
+└── sftp_upload_encrypted # Upload encrypted .gpg file via SFTP
 
-Third and most important:
 
-```sh
-Have fun!
-```
+---
 
+## 📑 Output File
+
+- **Plaintext file (.txt)**: Main.Primary files for validations
+- **Encrypted file (.gpg)**: Encrypted file to be transfered. Named consistently with plaintext, but with .gpg suffix
+B2B_123456_TRANSACTIONS_20250826.txt.gpg
+
+---
+
+## 🧩 Customization
+
+- **Schedule**: Modify the DAG schedule_interval (default: @daily) to match your delivery requirements.
+- **Retention**: Adjust B2B_DELETE_PLAINTEXT if you need to retain unencrypted copies for audit.
+- **Query**: Update the SQL query in the DAG if VISA Concur changes data requirements.
+
+---
+
+## 🛡 Security Considerations
+
+- Never commit private keys or plaintext files to version control.
+- Ensure file permissions are restrictive in the Airflow environment.
+- Use Airflow Connections for storing SFTP credentials securely (not in plain code).
+- Enable logging redaction for sensitive variables.
+
+---
+
+## 📖 License
+
+This project is provided as an example integration. Adapt and secure it according to your organization’s policies.
