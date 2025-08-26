@@ -4,7 +4,7 @@ from datetime import datetime
 from query import runqry  # your custom query runner
 
 # ---------------------------
-# Original query
+# Query
 # ---------------------------
 query = """
 SELECT '10034' AS "ACQUIRING_ID",
