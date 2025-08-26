@@ -1,6 +1,11 @@
-from query import runqry
+from airflow import DAG
+from airflow.operators.python import PythonOperator
 from datetime import datetime
+from query import runqry  # your custom query runner
 
+# ---------------------------
+# Original query
+# ---------------------------
 query = """
 SELECT '10034' AS "ACQUIRING_ID",
        t.textdescription,
@@ -34,15 +39,48 @@ AND pe.custidnumber IN (SELECT rnc FROM vids_businesses WHERE status = 1) --- RN
 AND UPPER(t.ORIGINATOR) NOT LIKE '%INCOMING%';
 """
 
-cdate = datetime.now().strftime("%Y%m%d")
-custom_file_name = "B2B_123456_TRANSACTIONS"
-result = runqry(query)
+# ---------------------------
+# Task function
+# ---------------------------
+def export_transactions(**context):
+    cdate = datetime.now().strftime("%Y%m%d")
+    custom_file_name = "B2B_123456_TRANSACTIONS"
+    result = runqry(query)
 
-if result:
+    if not result:
+        raise ValueError("Error executing query or no results returned.")
+
     file_name = f"{custom_file_name}_{cdate}.txt"
     with open(file_name, "w") as f:
         for row in result:
             f.write('|'.join(map(str, row)) + '\n')
+
     print(f"Query results exported to {file_name}")
-else:
-    print("Error executing query.")
+    return file_name
+
+# ---------------------------
+# DAG Definition
+# ---------------------------
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'retries': 1,
+}
+
+with DAG(
+    dag_id='export_transactions_dag',
+    default_args=default_args,
+    description='Run query and export B2B transactions to file',
+    schedule_interval='@daily',  # change as needed
+    start_date=datetime(2025, 1, 1),  # adjust start date
+    catchup=False,
+    tags=['b2b', 'transactions'],
+) as dag:
+
+    export_task = PythonOperator(
+        task_id='export_transactions',
+        python_callable=export_transactions,
+        provide_context=True,
+    )
+
+    export_task
