@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/juanjshb/)
 
-This Python script retrieves a business transaction data from the database and exports it into a text file and exports it in a format easy to process for another business.
+This Python script is an example to integrate PRIME4 to VISA Concur. By retrieving a business transaction data from the database and exports it into a text file and exports it in a format easy to process for another business.
 
 ## Usage
 
