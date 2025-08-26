@@ -42,9 +42,10 @@ pip install cx_Oracle
 
 ## 🔑 Configuration
 
-- This DAG relies on **Airflow Variables and Connections** for configuration.
+This DAG relies on **Airflow Variables and Connections** for configuration.
 
-### Airflow Variables  
+### Airflow Variables
+
 | Variable Name             | Description                                                                | Example Value                         |
 | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------- |
 | `B2B_OUTPUT_DIR`          | Local directory where intermediate/export files will be written            | `/opt/airflow/output`                 |
@@ -55,14 +56,16 @@ pip install cx_Oracle
 | `B2B_SFTP_REMOTE_DIR`     | Remote directory on SFTP server where encrypted files should be placed     | `/incoming/b2b`                       |
 | `B2B_DELETE_PLAINTEXT`    | Whether to delete the unencrypted file after PGP encryption (`true/false`) | `true`                                |
 
-### Airflow Connection  
+### Airflow Connection
+
 - Create a connection in Airflow UI (Admin > Connections):
 1. Conn Id: sftp_b2b (or match your B2B_SFTP_CONN_ID variable)
 2. Conn Type: SFTP
 3. Login: Username provided by VISA Concur
 4. Password / Key file: Authentication details (password or private key)
 
-### DAG Structure 
+### DAG Structure
+
 export_transactions_dag
 │
 ├── export_transactions  # Run SQL query & write TXT file
