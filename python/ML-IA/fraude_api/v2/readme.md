@@ -1,8 +1,8 @@
 # 🛡️ API de Detección de Fraude Bancario Multi-Moneda (República Dominicana) v2.0
 
-## 📋 Descripción Mejorada
+## 📋 Descripción
 
-Sistema avanzado de detección de fraude que combina Machine Learning (Isolation Forest) con reglas de negocio específicas para el contexto bancario dominicano. **Ahora con soporte completo para múltiples monedas (DOP, USD, EUR)** integrado en tiempo real con las tasas de cambio del BHD León.
+Sistema avanzado de detección de fraude que combina Machine Learning (Isolation Forest) con reglas de negocio específicas para el contexto bancario dominicano. **Ahora con soporte completo para múltiples monedas (DOP, USD, EUR)** integrado en tiempo real con las tasas de cambio del BHD León **No se elegio por preferencia particular (lo ideal es obtener la consulta de la entidad bancaria en cuestion o del banco central; pero el web scrapping fue mas sencillo con esta)**.
 
 ### 🎯 Nuevas Características Multi-Moneda
 
@@ -203,7 +203,7 @@ Información general de la API y endpoints disponibles.
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/tu_usuario/fraude_api.git
+git clone https://github.com/juanjshb/Public/python/fraude_api.git
 cd fraude_api
 
 # Instalar dependencias
@@ -317,5 +317,6 @@ Este sistema es una demostración técnica avanzada con soporte multi-moneda. Pa
 ---
 
 **🚀 ¿Listo para detectar fraude en múltiples monedas? ¡Inicia el servidor y comienza a analizar!**
+
 
 
