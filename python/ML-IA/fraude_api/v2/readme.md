@@ -35,7 +35,7 @@ Sistema avanzado de detección de fraude que combina Machine Learning (Isolation
 
 ---
 
-## 📊 Mejoras en las Respuestas Multi-Moneda
+## 📊 Respuestas Multi-Moneda
 
 ### Ejemplo de Respuesta Mejorada con Conversión
 
@@ -282,9 +282,7 @@ curl "http://localhost:8000/tasas-cambio"
 ## 📞 Soporte y Mantenimiento
 
 **Autor:** Juan Jesús Herrera Benítez  
-**Rol:** Systems Manager & ICT Project Leader  
-**Especialidad:** Sistemas Bancarios y Cumplimiento Legal  
-**Experiencia:** Integraciones Financieras Multi-Moneda
+**Experiencia:** Sistemas Bancarios y Cumplimiento Legal  
 
 ---
 
@@ -299,7 +297,7 @@ Este sistema es una demostración técnica avanzada con soporte multi-moneda. Pa
 5. **Pruebas**: Testing exhaustivo con datos reales anonimizados
 6. **Backup de Tasas**: Múltiples fuentes de tasas para redundancia
 
-**Versión:** 3.0.0  
+**Versión:** 2.0.0  
 **Última actualización:** Septiembre 2025  
 **Soporte Multi-Moneda:** ✅ Completo (DOP, USD, EUR)
 
@@ -319,4 +317,5 @@ Este sistema es una demostración técnica avanzada con soporte multi-moneda. Pa
 ---
 
 **🚀 ¿Listo para detectar fraude en múltiples monedas? ¡Inicia el servidor y comienza a analizar!**
+
 
