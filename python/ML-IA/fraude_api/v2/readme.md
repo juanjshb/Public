@@ -1,4 +1,4 @@
-# 🛡️ API de Detección de Fraude Bancario Multi-Moneda (República Dominicana) v3.0
+# 🛡️ API de Detección de Fraude Bancario Multi-Moneda (República Dominicana) v2.0
 
 ## 📋 Descripción Mejorada
 
@@ -319,3 +319,4 @@ Este sistema es una demostración técnica avanzada con soporte multi-moneda. Pa
 ---
 
 **🚀 ¿Listo para detectar fraude en múltiples monedas? ¡Inicia el servidor y comienza a analizar!**
+
