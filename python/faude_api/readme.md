@@ -101,23 +101,12 @@ Respuesta:
 
 ##    🏛️ Cumplimiento legal
 
-  ---------------------------------------------------------------------------
-  Aspecto          Implementación            Relación con la ley
-  ---------------- ------------------------- --------------------------------
-  Protección de    Hash irreversible del     Minimiza riesgo de
-  datos (Ley       cliente_id                reidentificación.
-  172-13)                                    
-
-  Trazabilidad     auditoria/alertas.json    Evidencia para auditoría y
-  (SIB)            con timestamp, score y    reportes.
-                   motivo                    
-
-  Finalidad        Procesamiento exclusivo   Compatible con Ley 183-02 y
-  legítima         para detección de fraude  155-17.
-
-  Consentimiento   Debe implementarse en     Requisito en producción.
-                   contratos/UX              
-  ---------------------------------------------------------------------------
+| Aspecto                              | Implementación                                         | Relación con la ley                  |
+| ------------------------------------ | ------------------------------------------------------ | ------------------------------------ |
+| **Protección de datos (Ley 172-13)** | Hash irreversible del `cliente_id`                     | Minimiza riesgo de reidentificación. |
+| **Trazabilidad (SIB)**               | `auditoria/alertas.json` con timestamp, score y motivo | Evidencia para auditoría y reportes. |
+| **Finalidad legítima**               | Procesamiento exclusivo para detección de fraude       | Cumplimiento con Ley 183-02 y 155-17.|
+| **Consentimiento**                   | Debe implementarse en contratos/UX                     | Requisito en producción.             |
 
 ------------------------------------------------------------------------
 
@@ -149,6 +138,7 @@ configuraciones adicionales requeridas por las autoridades dominicanas.
 ##    ⚠️ Aviso
 
 -  Aunque mencionado al principio recordar que esto es un ejemplo para demostrar la posibilidad de utilizar API e IA para la deteccion de fraude. El ejemplo debe ser actualizado y aplicar politicas internas de la institucion bancaria.
+
 
 
 
