@@ -1,0 +1,20 @@
+[
+    {
+        "cliente_hash": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "pais": "DO",
+        "monto": 12500.0,
+        "hora": 3,
+        "es_fraude": true,
+        "score": -0.0782495328338687,
+        "timestamp": "2025-09-29T17:39:09.211074"
+    },
+    {
+        "cliente_hash": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "pais": "DO",
+        "monto": 12500.0,
+        "hora": 3,
+        "es_fraude": true,
+        "score": -0.0782495328338687,
+        "timestamp": "2025-09-29T17:39:23.377851"
+    }
+]
