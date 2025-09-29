@@ -141,11 +141,12 @@ configuraciones adicionales requeridas por las autoridades dominicanas.
 
 👤 Autor
 
--Desarrollado por Juan Jesús Herrera Benítez
--Rol: Systems Manager & ICT Project Leader
+-  Desarrollado por Juan Jesús Herrera Benítez
+-  Rol: Systems Manager & ICT Project Leader
 
 ------------------------------------------------------------------------
 
 ⚠️ Aviso
 
--Aunque mencionado al principio recordar que esto es un ejemplo para demostrar la posibilidad de utilizar API e IA para la deteccion de fraude. El ejemplo debe ser actualizado y aplicar politicas internas de la institucion bancaria.
+-  Aunque mencionado al principio recordar que esto es un ejemplo para demostrar la posibilidad de utilizar API e IA para la deteccion de fraude. El ejemplo debe ser actualizado y aplicar politicas internas de la institucion bancaria.
+
