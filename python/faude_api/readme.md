@@ -31,7 +31,7 @@ El diseño sigue las normativas dominicanas de:
 
 ------------------------------------------------------------------------
 
-##📂 Estructura del proyecto
+##    📂 Estructura del proyecto
 
     fraude_api/
     │
@@ -149,5 +149,6 @@ configuraciones adicionales requeridas por las autoridades dominicanas.
 ##    ⚠️ Aviso
 
 -  Aunque mencionado al principio recordar que esto es un ejemplo para demostrar la posibilidad de utilizar API e IA para la deteccion de fraude. El ejemplo debe ser actualizado y aplicar politicas internas de la institucion bancaria.
+
 
 
