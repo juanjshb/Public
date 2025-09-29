@@ -1,4 +1,4 @@
-🛡️ API de Detección de Fraude Bancario (República Dominicana)
+#    	🛡️ API de Detección de Fraude Bancario (República Dominicana)
 
 Este proyecto es una API REST en Python (FastAPI) que detecta
 transacciones bancarias sospechosas de fraude utilizando Machine
@@ -19,7 +19,7 @@ El diseño sigue las normativas dominicanas de:
 
 ------------------------------------------------------------------------
 
-🚀 Características
+##    🚀 Características
 
 -   Detección de anomalías con IsolationForest.
 -   Anonimización de identificadores de clientes usando SHA-256 (cumple
@@ -31,7 +31,7 @@ El diseño sigue las normativas dominicanas de:
 
 ------------------------------------------------------------------------
 
-📂 Estructura del proyecto
+##📂 Estructura del proyecto
 
     fraude_api/
     │
@@ -43,7 +43,7 @@ El diseño sigue las normativas dominicanas de:
 
 ------------------------------------------------------------------------
 
-⚙️ Requisitos
+##    ⚙️ Requisitos
 
 -   Python 3.9 o superior
 -   Paquetes:
@@ -58,7 +58,7 @@ Instalar dependencias:
 
 ------------------------------------------------------------------------
 
-▶️ Ejecución
+##    ▶️ Ejecución
 
 1.  Clonar este repositorio:
 
@@ -76,7 +76,7 @@ Instalar dependencias:
 
 ------------------------------------------------------------------------
 
-📤 Ejemplo de solicitud
+##    📤 Ejemplo de solicitud
 
 POST /analizar
 
@@ -99,7 +99,7 @@ Respuesta:
 
 ------------------------------------------------------------------------
 
-🏛️ Cumplimiento legal
+##    🏛️ Cumplimiento legal
 
   ---------------------------------------------------------------------------
   Aspecto          Implementación            Relación con la ley
@@ -121,7 +121,7 @@ Respuesta:
 
 ------------------------------------------------------------------------
 
-🔒 Recomendaciones para producción
+##    🔒 Recomendaciones para producción
 
 -   Base de datos cifrada (PostgreSQL/MSSQL) en lugar de JSON plano.
 -   TLS/HTTPS obligatorio para todas las comunicaciones.
@@ -131,7 +131,7 @@ Respuesta:
 
 ------------------------------------------------------------------------
 
-📜 Licencia
+##    📜 Licencia
 
 Este proyecto se distribuye bajo la licencia MIT.
 No se garantiza cumplimiento legal en entornos productivos sin las
@@ -139,14 +139,15 @@ configuraciones adicionales requeridas por las autoridades dominicanas.
 
 ------------------------------------------------------------------------
 
-👤 Autor
+##    👤 Autor
 
 -  Desarrollado por Juan Jesús Herrera Benítez
 -  Rol: Systems Manager & ICT Project Leader
 
 ------------------------------------------------------------------------
 
-⚠️ Aviso
+##    ⚠️ Aviso
 
 -  Aunque mencionado al principio recordar que esto es un ejemplo para demostrar la posibilidad de utilizar API e IA para la deteccion de fraude. El ejemplo debe ser actualizado y aplicar politicas internas de la institucion bancaria.
+
 
