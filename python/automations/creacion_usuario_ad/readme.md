@@ -148,6 +148,7 @@ El script muestra en consola:
 - Verificar permisos de ejecución en el dominio
 - Las contraseñas temporales deben cumplir políticas de dominio
 - Realizar pruebas en ambiente de desarrollo primero
+- Ajuster el trigger segun la base de datos de Capital Humano
 
 ## 🤝 Soporte
 
