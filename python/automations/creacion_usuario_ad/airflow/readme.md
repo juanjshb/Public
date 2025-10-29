@@ -155,7 +155,6 @@ El script muestra en consola:
 
 ## 📝 Notas Importantes
 
-- **NO SUBIR el archivo `.env`** al control de versiones
 - Verificar permisos de ejecución en el dominio
 - Las contraseñas temporales deben cumplir políticas de dominio
 - Realizar pruebas en ambiente de desarrollo primero
