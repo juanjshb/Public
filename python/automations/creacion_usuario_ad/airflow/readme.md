@@ -31,9 +31,9 @@ El proyecto monitorea una base de datos SQL Server en busca de nuevos empleados 
 proyecto-ad/
 ├── requirements.txt      # Dependencias de Python
 ├── run.py               # Script principal de automatización
-├── 1_tables.sql         # Creación de tabla de usuarios pendientes
-├── 2_triggers.sql       # Trigger para detección automática
-├── .env                 # Configuración de entorno (NO SUBIR A GIT)
+├── db         # Scripts para preparacion de la base de datos del Sistema de RRHH
+    ├── 1_tables.sql         # Creación de tabla de usuarios pendientes
+    ├── 2_triggers.sql       # Trigger para detección automática
 └── README.md           # Esta documentación
 ```
 
