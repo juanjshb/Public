@@ -41,14 +41,17 @@ proyecto-ad/
 
 ### 1. Variables de Entorno (.env)
 
-Crear archivo `.env` con la siguiente configuración:
+Antes de ejecutar el DAG, crea las Variables de Airflow desde la UI o CLI:
 
-```env
-DB_CONN=DRIVER={SQL Server};SERVER=MI_SERVIDOR;DATABASE=SPN;Trusted_Connection=yes;
-AD_BASE_DN=OU=Usuarios,DC=empresa,DC=com
-AD_DEFAULT_PASSWORD=CambioTemporal123*
-EMAIL_DOMAIN=empresa.com.do
 ```
+airflow variables set DB_CONN "DRIVER={SQL Server};SERVER=TU_SERVIDOR;DATABASE=SPN;Trusted_Connection=yes;"
+airflow variables set AD_BASE_DN "OU=Usuarios,DC=empresa,DC=com"
+airflow variables set AD_DEFAULT_PASSWORD "CambioTemporal123*"
+airflow variables set EMAIL_DOMAIN "dominio.com.do"
+```
+
+O desde la interfaz:
+Admin → Variables → +
 
 ### 2. Instalación de Dependencias
 
