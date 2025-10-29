@@ -3,8 +3,8 @@
 Este proyecto automatiza la generación y envío de reportes semanales de estado de proyectos Jira, utilizando inteligencia artificial (IA) para redactar resúmenes ejecutivos profesionales.
 
 Incluye dos implementaciones:
-- **`report_chatgpt.py`** → usa la API de OpenAI (ChatGPT).
-- **`report_gemini.py`** → usa la API de Google Gemini.
+- **`chatgpt.py`** → usa la API de OpenAI (ChatGPT).
+- **`gemini.py`** → usa la API de Google Gemini.
 
 Los informes se generan automáticamente y se envían al canal de Slack del equipo.
 
