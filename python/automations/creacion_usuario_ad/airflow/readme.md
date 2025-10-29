@@ -95,11 +95,19 @@ python run.py
 ```
 
 ### Ejecución Programada (Recomendado)
-Configurar en Task Scheduler de Windows para ejecutar periódicamente:
+Configurar en Airflow Scheduler sengun como se desee:
 
-```bash
-# Ejemplo ejecución cada 30 minutos
-python C:\ruta\al\proyecto\run.py
+```python
+# Ejemplo ejecución cada hora
+with DAG(
+    'sync_ad_users_dag',
+    default_args=default_args,
+    description='Sincroniza usuarios pendientes desde SQL Server a Active Directory',
+    schedule_interval='@hourly',  # cada hora
+    start_date=datetime(2025, 1, 1),
+    catchup=False,
+    tags=['active_directory', 'sync']
+) as dag:
 ```
 
 ## 📊 Estructura de la Base de Datos
