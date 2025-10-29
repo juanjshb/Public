@@ -1,10 +1,3 @@
-Perfecto 💪
-Aquí tienes un **README.md profesional y claro**, preparado para un repositorio que contiene **dos scripts Python**:
-uno que usa **ChatGPT (OpenAI)** y otro que usa **Gemini (Google)** para generar reportes ejecutivos de proyectos con datos de **Jira** y enviarlos automáticamente a **Slack**.
-
----
-
-````markdown
 # 🤖 Jira Weekly Reporter – con IA (ChatGPT / Gemini)
 
 Este proyecto automatiza la generación y envío de reportes semanales de estado de proyectos Jira, utilizando inteligencia artificial (IA) para redactar resúmenes ejecutivos profesionales.
@@ -49,7 +42,7 @@ Los informes se generan automáticamente y se envían al canal de Slack del equi
    ```bash
    git clone https://github.com/tuusuario/jira-ai-reporter.git
    cd jira-ai-reporter
-````
+    ````
 
 2. Crea un entorno virtual y actívalo:
 
