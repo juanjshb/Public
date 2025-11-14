@@ -1,4 +1,4 @@
-# [file name]: run_server.py
+/# [file name]: run_server.py
 # [file content begin]
 #!/usr/bin/env python3
 """
@@ -19,8 +19,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # --- NUEVAS CONFIGURACIONES SSL/TLS ---
-SSL_KEYFILE = "key.pem"
-SSL_CERTFILE = "cert.pem"
+SSL_KEYFILE = "ssl/key.pem"
+SSL_CERTFILE = "ssl/cert.pem"
 
 if __name__ == "__main__":
     
@@ -63,3 +63,4 @@ if __name__ == "__main__":
         logger.error(f"❌ Error al iniciar el servidor: {e}")
         sys.exit(1)
 # [file content end]
+
