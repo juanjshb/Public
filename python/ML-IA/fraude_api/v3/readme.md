@@ -35,10 +35,25 @@ Esta versión introduce una arquitectura completamente nueva orientada a la pers
 
 -----
 
+### Factores de Riesgo
+
+| Factor | Descripción | Puntaje | Moneda |
+|--------|-------------|---------|---------|
+| `MONTO_ELEVADO` | Transacciones > $10,000 DOP | +2 | Todas |
+| `MONTO_MUY_BAJO` | Transacciones < $50 DOP | +1 | Todas |
+| `TRANSACCION_DIVISA` | Operación en USD/EUR | +1 | USD/EUR |
+| `DIVISA_MONTO_ELEVADO` | Divisa + monto > $15,000 DOP | +2 | USD/EUR |
+| `HORARIO_NOCTURNO` | Entre 12am-6am | +1 | Todas |
+| `PAIS_ALTO_RIESGO` | Venezuela, Haití | +2 | Todas |
+| `PAIS_RIESGO_MEDIO` | Países no DO/US | +1 | Todas |
+| `MONTO_ALTO_HORARIO_SOSPECHOSO` | Combo monto alto + horario nocturno | +2 | Todas |
+
+-----
+
 ## 🔧 Arquitectura del Proyecto (v3)
 
 ```
-fraude_api_v3/
+v3/
 │
 ├── main.py                 # API FastAPI: Endpoints (/analizar-iso, /health), DB, Redis
 ├── detector.py             # Lógica ML (Isolation Forest) y conversión de tasas (BHD)
@@ -52,21 +67,6 @@ fraude_api_v3/
 ├── requirements.txt        # Dependencias (fastapi, sqlalchemy, asyncpg, redis, slowapi)
 └── readme.md               # Esta documentación
 ```
-
------
-
-### Nuevos Factores de Riesgo Implementados
-
-| Factor | Descripción | Puntaje | Moneda |
-|--------|-------------|---------|---------|
-| `MONTO_ELEVADO` | Transacciones > $10,000 DOP | +2 | Todas |
-| `MONTO_MUY_BAJO` | Transacciones < $50 DOP | +1 | Todas |
-| `TRANSACCION_DIVISA` | Operación en USD/EUR | +1 | USD/EUR |
-| `DIVISA_MONTO_ELEVADO` | Divisa + monto > $15,000 DOP | +2 | USD/EUR |
-| `HORARIO_NOCTURNO` | Entre 12am-6am | +1 | Todas |
-| `PAIS_ALTO_RIESGO` | Venezuela, Haití | +2 | Todas |
-| `PAIS_RIESGO_MEDIO` | Países no DO/US | +1 | Todas |
-| `MONTO_ALTO_HORARIO_SOSPECHOSO` | Combo monto alto + horario nocturno | +2 | Todas |
 
 -----
 
@@ -230,6 +230,8 @@ Verifica el estado del servicio. Respuesta de ejemplo:
   * **Contenerización:** Empaquetar la aplicación usando Docker y Docker Compose para gestionar los servicios (API, Postgres, Redis).
   * **Reglas de negocio:** Mejorar las reglas de negocio, segun tu negocio.
   * **Historial de transacciones del cliente:** Considerar el historial de transacciones de ese cliente para detectar anomalias y alertas; todas sus tarjetas.
+  * **Factor de riesgo y reglas:** Hacer que el factor de riesgo este en la base de datos. 
+  *  **UI y Reportes** Agregar UI para poder crear reglas y parametrizacion de forma User-friendly; Ademas de generacion de reportes
 -----
 
 ## ⚖️ Aviso Legal y Cumplimiento
@@ -244,4 +246,5 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
 
