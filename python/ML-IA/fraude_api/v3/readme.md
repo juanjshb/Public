@@ -1,6 +1,3 @@
-
------
-
 # 🛡️ API de Detección de Fraude Bancario v3.0
 
 ## Plataforma de Análisis ISO 8583 con Base de Datos
@@ -57,6 +54,21 @@ fraude_api_v3/
 ├── requirements.txt        # Dependencias (fastapi, sqlalchemy, asyncpg, redis, slowapi)
 └── readme.md               # Esta documentación
 ```
+
+-----
+
+### Nuevos Factores de Riesgo Implementados
+
+| Factor | Descripción | Puntaje | Moneda |
+|--------|-------------|---------|---------|
+| `MONTO_ELEVADO` | Transacciones > $10,000 DOP | +2 | Todas |
+| `MONTO_MUY_BAJO` | Transacciones < $50 DOP | +1 | Todas |
+| `TRANSACCION_DIVISA` | Operación en USD/EUR | +1 | USD/EUR |
+| `DIVISA_MONTO_ELEVADO` | Divisa + monto > $15,000 DOP | +2 | USD/EUR |
+| `HORARIO_NOCTURNO` | Entre 12am-6am | +1 | Todas |
+| `PAIS_ALTO_RIESGO` | Venezuela, Haití | +2 | Todas |
+| `PAIS_RIESGO_MEDIO` | Países no DO/US | +1 | Todas |
+| `MONTO_ALTO_HORARIO_SOSPECHOSO` | Combo monto alto + horario nocturno | +2 | Todas |
 
 -----
 
@@ -214,12 +226,12 @@ Verifica el estado del servicio. Respuesta de ejemplo:
 
 ## 🔒 Recomendaciones para Producción
 
-  * **Migraciones de DB:** Usar **Alembic** para gestionar los cambios en el esquema de la base de datos de forma controlada.
   * **Variables de Entorno:** No quemar credenciales. Usar `.env` (como está implementado con `pydantic-settings`) o secretos de orquestación (Kubernetes Secrets, etc.).
   * **Seguridad:** Implementar HTTPS (TLS), autenticación de API (ej. JWT u OAuth2) y firewalls de red.
   * **Pruebas:** Añadir un set de pruebas unitarias e de integración (`pytest`) para `detector.py` y los endpoints de `main.py`.
   * **Contenerización:** Empaquetar la aplicación usando Docker y Docker Compose para gestionar los servicios (API, Postgres, Redis).
-
+  * **Reglas de negocio:** Mejorar las reglas de negocio, segun tu negocio.
+  * **Historial de transacciones del cliente:** Considerar el historial de transacciones de ese cliente para detectar anomalias y alertas; todas sus tarjetas.
 -----
 
 ## ⚖️ Aviso Legal y Cumplimiento
@@ -230,3 +242,7 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
   * **Trazabilidad:** La base de datos `ctransactions` provee la trazabilidad completa requerida por la SIB.
 
   * **Uso de Tasas:** La integración con el BHD es para fines demostrativos. En un entorno real, se debe usar la API de tasas oficial de la institución o del Banco Central.
+
+
+**Versión:** 3.0.0  
+**Última actualización:** Noviembre 2025
