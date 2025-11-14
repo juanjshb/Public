@@ -4,7 +4,7 @@ Con el paso del tiempo el proyecto ha evolucionado en alcance, arquitectura y re
 
 ## Versión 1 (Deprecada)
 
-**Estado:** Eliminada
+**Estado:** Eliminada.
 **Resumen:** Primera aproximación basada únicamente en reglas estáticas.
 **Motivo de deprecación:** La arquitectura no permitía escalabilidad ni integración con modelos de decisión más complejos.
 
