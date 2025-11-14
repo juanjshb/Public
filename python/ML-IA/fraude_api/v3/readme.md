@@ -115,7 +115,21 @@ python run_server.py
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-**Acceder a la documentación interactiva:** http://localhost:8000/docs
+### 4: Generar los Certificados
+
+Abre tu terminal en la raíz del proyecto y ejecuta el siguiente comando (requiere `openssl`, que usualmente viene instalado en Linux, macOS y Git Bash en Windows):
+
+```bash
+openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365 -subj "/CN=localhost"
+```
+
+  * Esto creará dos archivos en tu carpeta: `key.pem` (tu llave privada) y `cert.pem` (tu certificado público), válidos por 365 días para `localhost` copialos en la carpeta `ssl` o la que tengas preseterminada.
+
+  **Nota: Estos certificados son self-signed o firmados por el mismo equipo en caso de que tengas un proveedor solo has tu proceso y copia los archivos en tu carperta del servidor**
+
+**Acceder a la documentación interactiva:** https://localhost:8000/docs
+
+
 
 -----
 
@@ -246,5 +260,6 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
 
 
