@@ -118,8 +118,6 @@ openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 36
 
   **Nota: Estos certificados son self-signed o firmados por el mismo equipo en caso de que tengas un proveedor solo has tu proceso y copia los archivos en tu carperta del servidor**
 
-**Acceder a la documentación interactiva:** https://localhost:8000/docs
-
 
 ### 4\. Ejecutar el Servidor
 
@@ -130,6 +128,8 @@ python run_server.py
 # O directamente con uvicorn
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
+
+**Acceder a la documentación interactiva:** https://localhost:8000/docs
 
 -----
 
@@ -260,6 +260,7 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
 
 
 
