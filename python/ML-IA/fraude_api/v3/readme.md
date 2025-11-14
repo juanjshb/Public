@@ -10,6 +10,7 @@ Combina Machine Learning (Isolation Forest), reglas de negocio específicas para
 
 Esta versión introduce una arquitectura completamente nueva orientada a la persistencia y el procesamiento de nivel empresarial:
 
+  * **Seguridad Mejorada:** Incluye un comunicacion HTTPS (TLS) y auto-carga del certificado para el proceso de renovacion.
   * **Integración con PostgreSQL:** Todas las transacciones analizadas y sus resultados de fraude se almacenan en una base de datos relacional.
   * **Procesamiento ISO 8583:** Nuevo endpoint (`/analizar-iso`) que acepta transacciones en un formato JSON basado en el estándar ISO 8583.
   * **Persistencia y Auditoría:** La tabla `ctransactions` guarda una copia de la transacción entrante *junto con* el veredicto del modelo (fraude, riesgo, factores, etc.), creando un registro de auditoría completo.
@@ -239,7 +240,7 @@ Verifica el estado del servicio. Respuesta de ejemplo:
 ## 🔒 Recomendaciones para Producción
 
   * **Variables de Entorno:** No quemar credenciales. Usar `.env` (como está implementado con `pydantic-settings`) o secretos de orquestación (Kubernetes Secrets, etc.).
-  * **Seguridad:** Implementar HTTPS (TLS), autenticación de API (ej. JWT u OAuth2) y firewalls de red.
+  * **Seguridad:** Autenticación de API (ej. JWT u OAuth2) y firewalls de red.
   * **Pruebas:** Añadir un set de pruebas unitarias e de integración (`pytest`) para `detector.py` y los endpoints de `main.py`.
   * **Contenerización:** Empaquetar la aplicación usando Docker y Docker Compose para gestionar los servicios (API, Postgres, Redis).
   * **Reglas de negocio:** Mejorar las reglas de negocio, segun tu negocio.
@@ -260,6 +261,7 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
 
 
 
