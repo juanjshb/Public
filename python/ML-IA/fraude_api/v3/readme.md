@@ -1,4 +1,3 @@
-Aquí tienes un `readme.md` actualizado a la **Versión 3.0**, que incorpora la base de datos PostgreSQL, el procesamiento de transacciones ISO 8583 y el rate-limiting con Redis.
 
 -----
 
@@ -229,4 +228,5 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
   * **Anonimización:** Los IDs de cliente se anonimizan con SHA-256 antes de ser expuestos en la respuesta.
   * **Trazabilidad:** La base de datos `ctransactions` provee la trazabilidad completa requerida por la SIB.
+
   * **Uso de Tasas:** La integración con el BHD es para fines demostrativos. En un entorno real, se debe usar la API de tasas oficial de la institución o del Banco Central.
