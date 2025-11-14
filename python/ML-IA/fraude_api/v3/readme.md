@@ -106,17 +106,7 @@ Asegúrate de tener PostgreSQL y Redis instalados y ejecutándose.
     pip install -r requirements.txt
     ```
 
-### 3\. Ejecutar el Servidor
-
-```bash
-# Usando el script de inicio (recomendado)
-python run_server.py
-
-# O directamente con uvicorn
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-### 4: Generar los Certificados
+### 3\. Generar los Certificados
 
 Abre tu terminal en la raíz del proyecto y ejecuta el siguiente comando (requiere `openssl`, que usualmente viene instalado en Linux, macOS y Git Bash en Windows):
 
@@ -131,6 +121,15 @@ openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 36
 **Acceder a la documentación interactiva:** https://localhost:8000/docs
 
 
+### 4\. Ejecutar el Servidor
+
+```bash
+# Usando el script de inicio (recomendado)
+python run_server.py
+
+# O directamente con uvicorn
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
 
 -----
 
@@ -261,6 +260,7 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
 
 
 
