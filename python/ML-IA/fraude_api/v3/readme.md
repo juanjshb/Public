@@ -1,7 +1,5 @@
 # 🛡️ API de Detección de Fraude Bancario v3.0
 
-## Plataforma de Análisis ISO 8583 con Base de Datos
-
 Sistema integral para la detección, análisis y auditoría de fraude en transacciones bancarias. Esta versión evoluciona de una simple API de predicción a una plataforma robusta con persistencia de datos, capaz de procesar formatos de transacción estándar de la industria como **ISO 8583**.
 
 Combina Machine Learning (Isolation Forest), reglas de negocio específicas para el contexto dominicano, integración de tasas de cambio en tiempo real (BHD), y ahora, una base de datos **PostgreSQL** para auditoría y un sistema de **Rate Limiting** con **Redis**.
@@ -246,3 +244,4 @@ Este sistema está diseñado como una herramienta de soporte a la decisión para
 
 **Versión:** 3.0.0  
 **Última actualización:** Noviembre 2025
+
